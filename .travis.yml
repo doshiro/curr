@@ -22,7 +22,7 @@ before_install:
 - cat travis-racket/install-racket.sh | bash
 - export PATH="${RACKET_DIR}/bin:${PATH}"
 script:
-- cd doshiro
+- cd ..
 - raco link curr
 - cd curr
 - racket build-workbook.rkt --course algebra-pyret #TODO
