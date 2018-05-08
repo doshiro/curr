@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html moznomarginboxes=""><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Exercise: Do Examples Have the Same Contracts?</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="pretty-printing.css" title="default"/><link rel="stylesheet" type="text/css" href="codemirror.css" title="default"/><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="textbook.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="codemirror.js"></script><script type="text/javascript" src="runmode.js"></script><script type="text/javascript" src="scheme2.js"></script><script type="text/javascript" src="pyret-mode.js"></script><script type="text/javascript" src="bootstraplesson.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2Chttp%3A%2F%2Fwww.cs.wpi.edu%2F%7Ekfisler%2Fmathjaxlocal.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="mature"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Exercise:<span class="mywbr"> &nbsp;</span> Do Examples Have the Same Contracts?</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Exercise__.Do_.Examples_.Have_the_.Same_.Contracts_%29" class="tocsubseclink" data-pltdoc="x">Exercise:<span class="mywbr"> &nbsp;</span> Do Examples Have the Same Contracts?</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><a name="(part._.Exercise__.Do_.Examples_.Have_the_.Same_.Contracts_)"></a><p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><noscript></noscript><script type="text/javascript" src="easyXDM.min.js"></script><noscript></noscript><script type="text/javascript" src="json2.min.js"></script><noscript></noscript><script type="text/javascript" src="wescheme-embedded.js"></script><noscript></noscript><script type="text/javascript" src="bootstrap-helpers.js"></script><noscript></noscript></p><p><div id="homeworkInfo"></div></p><p><span class="BootstrapTitle">Exercise: Do Examples Have the Same Contracts?</span></p><div class="content"><div id="exercises" class="segment "><div class="exercise-instr"><span style="font-weight: bold">Directions: </span>For each pairs of <span style="font-style: italic">Example</span>s below, decide whether the two examples
            have the same contract. If they do, fill in the contract in the space
-           provided. If not, write a few words explaining why.</div><ol><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+           provided. If not, write a few words explaining why.</div><ol><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery("+", 4, 5) is
           4 + 5
@@ -10,7 +10,7 @@ examples:
  mystery("num-sqrt", 25) is 
          num-sqrt(25)
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery(triangle(70, "solid", "green")) is
          triangle(140, "solid", "green")
@@ -19,7 +19,7 @@ examples:
  mystery(circle(100, "solid", "blue") is
          circle(200, "solid", "blue")
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery("red") is
          triangle(140, "solid", "red")
@@ -28,7 +28,7 @@ examples:
  mystery("blue", "circle") is
          circle(140, "solid", "blue")
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery("circle", 4) is 
           pi * num-sqr(4)
@@ -37,7 +37,7 @@ examples:
  mystery("square", 5) is
          num-sqr(5)
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery("dog") is
           3
@@ -46,7 +46,7 @@ examples:
  mystery("cat") is
          "kitten"
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery("dog") is
           3
@@ -55,7 +55,7 @@ examples:
  mystery("kitten") is
          6
 end
-</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span> : <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
+</textarea></div></li><li><div class="ExerciseListItem">; <span class="contract-name studentAnswer"></span>: <span class="contract-domain studentAnswer"></span> -&gt; <span class="contract-range studentAnswer"></span>&nbsp;<textarea class="racket">
 examples:
  mystery(4, 5, "big") is
           scale(2, (rectangle(4, 5, "solid", "blue"))
