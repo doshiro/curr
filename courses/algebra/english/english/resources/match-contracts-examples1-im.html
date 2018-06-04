@@ -6,18 +6,19 @@ examples:
 end
 </textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Image -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
-  match(10, "blue") is 10 + string-length("blue")
+  match(10, "blue") is 
+    10 + string-length("blue")
 end
-</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number String -&gt; Number</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number, String -&gt; Number</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
   match(num-abs(-4), "45") is 4
 end
-</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number Image -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number, Image -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
   match(triangle(20, "solid", "blue")), 3) is
   scale(3, triangle(20, "solid", "blue"))
 end
-</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Image Number -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+</textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Image, Number -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
   match(circle(10, "solid", "orange") ,22) is
   scale(22, circle(10, "solid", "orange"))
