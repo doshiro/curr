@@ -70,13 +70,13 @@ animals-table.build-column("year", birth-year)
 </span><p></p></span><ul class="lesson"><li class="lessonItem"><div class="student"><p><span class="slideText"><span class="BootstrapSlideTitle">Chaining Methods</span></span>Table methods can be chained together, so that we can build, filter <span style="font-style: italic">and</span> order a Table. For example:
 &nbsp;<textarea class="pyret">
 # get a table with the nametags of all the fixed animals, ordered by species
-animals-table.build-column("year", birth-year).filter(is-fixed).order-by("species", true)
+animals-table.build-column("nametag", birth-year).filter(is-fixed).order-by("species", true)
 </textarea>
 This code takes the <tt class="pyret">animals-table</tt>, and builds a new column. According to our Contracts Page, <tt class="pyret">.build-column</tt> produces a new Table, and that&rsquo;s the Table whose <tt class="pyret">.filter</tt> method we use. That method produces <span style="font-style: italic">yet another Table</span>, and we call that Table&rsquo;s <tt class="pyret">order-by</tt> method. The Table that comes back from that is our final result.</p></div><div class="teacher"><p>Suggestion: use different color markers to draw nested boxes around each part of the expression, showing where each Table came from.</p></div></li><li class="lessonItem"><div class="student"><p>It can be difficult to read code that has lots of method calls chained together, so we can break them up before each "<tt class="pyret">.</tt>"" to make it more readable. Here&rsquo;s the exact same code, written with line breaks:
 &nbsp;<textarea class="pyret">
 # get a table with the nametags of all the fixed animals, order by species
 animals-table
-  .build-column("year", birth-year)
+  .build-column("nametag", birth-year)
   .filter(is-fixed)
   .order-by("species", true)
 </textarea></p></div><div class="teacher"></div></li><li class="lessonItem"><div class="student"><div class="activity"><p>Can you chain these methods together correctly to answer the following questions?</p><ul><li><p>Show a table of only cats, sorted oldest-to-youngest.</p></li><li><p>Show a table of only fixed animals, in ascending order of the number of weeks they&rsquo;ve been at the shelter</p></li><li><p>Show a table of only young animals with a new column called <tt class="pyret">nametag</tt> that shows the image of every animal&rsquo;s nametag.</p></li></ul></div></div><div class="teacher"></div></li><li class="lessonItem"><div class="student"><p>Suppose we wanted to build a new column for a table, and then sort by that column. Compare the two lines of code below. Will they both work?
