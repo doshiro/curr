@@ -23,6 +23,8 @@ script:
 - raco link .
 - racket build-workbook.rkt
 - racket build-workbook.rkt --solutions
+- mkdir distribution
+- mv courses/algebra-pyret/resources/workbook/langs/en-us/workbook* distribution
 deploy:
   - provider: pages
     local_dir: distribution
