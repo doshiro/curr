@@ -30,4 +30,4 @@ deploy:
     keep-history: true
     github-token: $GITHUB_TOKEN
     on:
-      branch: pyret-lesson
+      branch: pyret-sols+travis
