@@ -23,7 +23,7 @@ script:
 - raco link .
 - racket build-workbook.rkt
 - racket build-workbook.rkt --solutions
-- racket build.rkt
+- racket build.rkt --language en-us
 deploy:
   - provider: pages
     local_dir: distribution
