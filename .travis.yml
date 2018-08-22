@@ -3,9 +3,7 @@ python:
 - '3.4'
 branches:
   only:
-  - im-pyret
-  - pyret-lesson
-  - master
+  - new-master+travis
 env:
   global:
   - GH_REF: github.com/brownplt/pyret-docs.git
@@ -22,11 +20,8 @@ before_install:
 - cat travis-racket/install-racket.sh | bash
 - export PATH="${RACKET_DIR}/bin:${PATH}"
 script:
-- cd ..
-- raco link curr
-- cd curr
-- racket build-workbook.rkt
-- racket build.rkt --language english
+- raco link .
+- ./build-distrib
 deploy:
   - provider: pages
     local_dir: distribution
@@ -34,4 +29,4 @@ deploy:
     keep-history: true
     github-token: $GITHUB_TOKEN
     on:
-      branch: pyret-lesson
+      branch: new-master+travis
