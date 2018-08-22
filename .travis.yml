@@ -13,8 +13,7 @@ env:
   - secure: LNFPDErTqBbgv3XgDI+X9q9Clb/BCFeuUcHjpzP5w5u4y2hpe3TnOkrLfI/FNNYqL2wczqA9cyQ6tDsczFatxz936heSU087uimPCEHKYuUk4jCZ3vM1iIH+MeiAEnaSDXmHOS0iSxvX86BU5AYULlRdpCNqU/12dzJZdARYhIGX+7LNUCUf2/D9MAbL85OjGjzR6ZEaJ5TdvL7IPKejsABiyU/TEAD6PNIgPaL4MRv+gqhedOak7nhFHUfJFUOVQ/GFE9np46HWW19aGIJSktO7RRCsDESUBte19qdQz+pABgn/mR3zVYsn0x7bd9VhpGHt5yeEpAhm82GB5MdkLVYCap8SgGHzl6IAXyToBTmC6wDxOQ/ivpWnkDum1W2rEuY/HrT1235Z7ea5YZVajg5uxAcnkpYqkOyWrLMm7yjXY6wdNQ9F1YKyx6GOxpZj/5opib3aF0hxIRF5nHD2ROZVgLeBM6PKliES1/X5GutBQCh3PsXwGd1G40YtUPXghMwxjYiDmwkM05fOnrUqwfobz98yrDm/6Q7KUEqUaUcV/RshLYcgXrOgSv9YSDykJ7BkvFhnDTOiHPVc4gg4GFHjZI0T8cCziyeroo3/pfR/Oe1kIXyuCzpP4kbY48JGE7GEvC7vT/dwOQ4ERt4XfzD2jlBaubqI6Boy95+VrKo=
 before_install:
 - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.trusty_amd64.deb
-- sudo dpkg -i ./wkhtmltox_0.12.5-1.trusty_amd64.deb
-- sudo apt-get install -f
+- sudo apt install ./wkhtmltox_0.12.5-1.trusty_amd64.deb
 - sudo apt-get install -y openssl build-essential libssl-dev libxrender-dev git-core libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev fontconfig pdftk texlive-latex-recommended
 - git clone https://github.com/greghendershott/travis-racket.git
 - cat travis-racket/install-racket.sh | bash
