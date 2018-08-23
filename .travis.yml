@@ -21,9 +21,7 @@ before_install:
 - export PATH="${RACKET_DIR}/bin:${PATH}"
 script:
 - raco link .
-- racket build-workbook.rkt --course algebra-pyret
-- racket build.rkt --course algebra-pyret
-- mv courses/algebra-pyret/resources/workbook/langs/en-us/workbook.pdf distribution/
+- ./build-distrib
 deploy:
   - provider: pages
     local_dir: distribution
