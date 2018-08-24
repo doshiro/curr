@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-	<head>
+        <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<title>Bootstrap: Standards Alignment</title>
-		<link rel="stylesheet" type="text/css" href="../../styles.css"/>
+                <title>Bootstrap: Standards Alignment</title>
+                <link rel="stylesheet" type="text/css" href="../../styles.css"/>
     <style>
       .BSUnitTitle{font-weight: bold;}
       .BSUnitSummary{margin: 5px;}
@@ -26,7 +26,7 @@
       @media only screen and (max-width: 960px), only screen and (max-device-width: 960px){input {font-size: 12px;}}
       @media only screen and (max-width: 800px), only screen and (max-device-width: 800px){input {display: block; border-radius: 20px; margin: 10px 0; font-size: 16px; padding: 10px 15px;}}
     </style>
-    
+
     <script>
       function showTable(id){
         document.getElementById('practice').style.display = 'none';
@@ -37,23 +37,23 @@
         document.getElementById(id).style.display = 'block';
       }
     </script>
-	</head>
-	<body>
-	<!--#include virtual="../../menubar.ssi" -->
-	
-	<div id="body" class="standards">
-		<div class="item">
-		<h1>Standards Alignment</h1>
+        </head>
+        <body>
+        <!--#include virtual="../../menubar.ssi" -->
+
+        <div id="body" class="standards">
+                <div class="item">
+                <h1>Standards Alignment</h1>
       <p>Extra lessons are nice, but Math teachers don't <i>have</i> 25 hours of spare classtime to spend on new materials, no matter how good it might be.
 
       <p>That's why Bootstrap is aligned to National and State Standards for Mathematics, covering most Functional and Algebraic standards from Grade 7 through Algebra 2. This alignment makes it possible to integrate Bootstrap into the classroom smoothly, using time you've already planned into your pacing guidelines or scope and sequence plans.
-      
+
       <p>For states using the Common Core, Bootstrap is also a model implementation of Common Core Standards for Mathematical Practice, offering explicit pedgagogical recommendation across all eight practice standards.
 
       <p>Bootstrap also satisfies several of the CSTA (Computer Science Teacher's Association) standards across levels 1 (grades K-6), 2 (grades 6-9), and 3 (grades 9-12); Bootstrap1 (the algebra-oriented first course) covers standards in levels 1 and 2, while Bootstrap2 goes deeper into computer science and covers more standards in levels 2 and 3.
     </div>
-    
-    
+
+
     <div class="item">
       <h1>What's Covered in 25 Hours?</h1>
       <input type="button" onclick="showTable('practice')"  value="Mathematical Practice Standards"/>
@@ -116,7 +116,7 @@
           </td>
         </tr>
       </table>
-      
+
       <table width="100%" id="content">
         <thead>
           <tr><td><h2>Algebra Standard</h2></td>
@@ -124,7 +124,7 @@
           </tr>
         </thead>
         </tr>
-        
+
         <!-- Number System -->
         <tr class="NS">
           <td><span>N-Q:</span> Reason quantitatively and use units to solve problems.</td>
@@ -134,19 +134,19 @@
           <td><span>6.NS.5-8:</span> Apply and extend previous understandings of numbers to the system of rational numbers.</td>
           <td>Unit 1</td>
         </tr>
-        
+
         <!-- Expressions and Equations -->
         <tr class="EE">
           <td><span>7.EE.1-4:</span> The student uses numerical and algebraic expressions and equations to solve real-life and mathematical problems.</td>
           <td>Units 3 and 6</td>
         </tr>
-        
+
         <!-- Functions -->
         <tr class="F">
           <td><span>8.F.1-3:</span> Define, evaluate, and compare functions.</td>
           <td>Unit 4, 6 and 8</td>
         </tr>
-        
+
         <!-- Seeing Structure in Expressions -->
         <tr class="A-SSE">
           <td><span>A-SSE.1-2:</span> Interpret the structure of expressions</td>
@@ -156,13 +156,13 @@
           <td><span>A-SSE.3-4:</span> Write expressions in equivalent forms to solve problems</td>
           <td>Units 1, 2 and Supplemental Lessons</td>
         </tr>
-        
+
         <!-- Creating Equations -->
         <tr class="A-CED">
           <td><span>A-CED.1-4:</span> Create equations that describe numbers or relationships</td>
           <td>Units 3, 4, 5, 6, 7, 8 and Supplemental Lessons</td>
         </tr>
-        
+
         <!-- Reasoning with Equations and Inequalities -->
         <tr class="A-REI">
           <td><span>A-REI.1-2:</span> Understand solving equations as a process of reasoning and explain the reasoning</td>
@@ -176,13 +176,13 @@
           <td><span>A-REI.10-12:</span> Represent and solve equations and inequalities graphically</td>
           <td>Unit 6</td>
         </tr>
-        
+
         <!-- Geometry -->
         <tr class="G">
           <td><span>8.G.6-8:</span> Understand and apply the Pythagorean Theorem</td>
           <td>Unit 8</td>
         </tr>
-        
+
         <!-- Interpreting Functions -->
         <tr class="F_IF">
           <td><span>F-IF.1-3:</span> Understand the concept of a function and use function notation</td>
@@ -196,7 +196,7 @@
           <td><span>F.IF.7-9:</span> Analyze functions using different representations</td>
           <td>Units 3-9 and Supplemental Lessons</td>
         </tr>
-        
+
         <!-- Building Functions -->
         <tr class="F-BF">
           <td><span>F-BF.1-2:</span> Build a function that models a relationship between two quantities</td>
@@ -206,7 +206,7 @@
           <td><span>F-BF.3-4:</span> Build new functions from existing functions</td>
           <td>Units 6, 7, 8 and Supplemental Lessons</td>
         </tr>
-        
+
         <!-- Linear, Quadratic, and Exponential Models -->
         <tr class="F_LE">
           <td><span>F-LE.1-4:</span> Construct and compare linear, quadratic, and exponential models and solve problems</td>
@@ -216,14 +216,14 @@
           <td><span>F-LE.5:</span> Interpret expressions for functions in terms of the situation they model</td>
           <td>Unit 5 and Supplemental Lessons</td>
         </tr>
-        
+
         <!-- Trigonometric Functions -->
         <tr class="F-TF">
           <td><span>F-TF.5:</span> Model periodic phenomena with trigonometric functions</td>
           <td>Supplemental Lessons</td>
         </tr>
       </table>
-      
+
       <table width="100%" id="TEKS">
         <thead>
           <tr><td>TEKS Standard</td>
@@ -410,186 +410,186 @@
             <td>Unit 7</td>
         </tr>
        </table>
-	   
-	       <table width="100%" id="csta">
-	         <thead>
-	           <tr><td><h2>CSTA Standard</h2></td>
-	             <td><h2>Alignment</h2></td></tr>
-	         </thead>
-	         <tr>
-	           <td><span>2-DA-07:</span> Represent data using multiple encoding schemes.
-	           </td>
-	           <td>
+
+               <table width="100%" id="csta">
+                 <thead>
+                   <tr><td><h2>CSTA Standard</h2></td>
+                     <td><h2>Alignment</h2></td></tr>
+                 </thead>
+                 <tr>
+                   <td><span>2-DA-07:</span> Represent data using multiple encoding schemes.
+                   </td>
+                   <td>
    <strong>Bootstrap:Algebra - Units 3-8
    <br/>Bootstrap:Data Science - Units 1-8
-	 <br/>Bootstrap:Reactive - Units 1-5</strong>
-	 <br/>
-	             Students encode data using multiple mathematical representations (Algebra), data structures (Reactive), and tabular or visual representations (Data Science).
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-DA-08:</span> Collect data using computational tools and transform the data to make it more useful and reliable.
-	           </td>
-	           <td>
-	 <strong>Bootstrap:Data Science - Units 3-9</strong>
-	 <br/>
-	           Bootstrap:Data Science introduces students to a number of data analysis methods, encouraging them to ask questions of large datasets and then sort, filter, and define functions over data to answer those questions. 
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-DA-09:</span> Refine computational models based on the data they have generated.
-	           </td>
-	           <td>
-	 <strong>Bootstrap:Reactive - Units 3-5
-	 <br/>Bootstrap:Data Science - Units 3-9</strong>
-	 <br/>
-	             Bootstrap:Reactive has students walk through an iterative design process for adding and refining elements in their programs based on what things will be changing within their programs. Bootstrap:Data Science has students refine data sets by sorting, filtering, and defining functions over data, as well as thinking critically about the need to remove outliers in their data.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-AP-11:</span> Create clearly named variables that represent different data types and perform operations on their values.
-	           </td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 2-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 1-9</strong>
-	 <br/>
-	           All Bootstrap courses cover functions and variables, including named values and inputs to built-in and user-defined functions. 
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-AP-13:</span> Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs
-	           </td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 5-8
-	 <br/>Bootstrap:Reactive - Units 3-5
-	 <br/>Bootstrap:Dta Science - Units 2-9</strong>
-	 <br/>
-	           Bootstrap introduces students to programming problems that benefit from decomposition into multiple functions and/or data structures. The Design Recipe provides some structured guidance on when to introduce new functions when decomposing problems. Bootstrap:Algebra and Bootstrap:Reactive introduce the idea of top-down or bottom-up strategies for decomposition.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-AP-14:</span> Create procedures with parameters to organize code and make it easier to reuse.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 3-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	 		  Bootstrap:Algebra introduces the core idea of functions as abstractions over repeated computations. Bootstrap:Reactive moves into larger programs that get decomposed into subproblems, which are designed, implemented, and tested independently.
-	 		  Bootstrap:Data Science introduces the idea of writing functions over tabular data to answer meaningful questions about that data.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-AP-17:</span> Systematically test and refine programs using a range of test cases.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 3-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	           Design and execution of test cases is emphasized throughout all Bootstrap courses. Students are required to write multiple test cases (including expected answers for each) for each function; our software helps them track which tests are passing and which are failing.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>2-AP-19:</span> Document programs in order to make them easier to follow, test, and debug.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 3-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	           Bootstrap's Design Recipe emphasizes design, documentation, coding, and testing throughout every course. The process is explicit in Bootstrap's worksheets and exercises, and student-generated documentation is assessed along with the code it explains.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3A-DA-11:</span> Create interactive data visualizations using software tools to help others better understand real-world phenomena.</td>
-	           <td>
-	 <strong>Bootstrap:Data Science - Units 4-9</strong>
-	 <br/>
-	           Bootstrap:Data Science introduces students to pie charts, bar charts, histograms, scatterplots, and more as a way of answering questions about, and better understanding real-world datasets. The course culminates in students writing a research paper incorporating these data visualizations about a topic they care about.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3A-AP-16:</span> Design and iteratively develop computational artifacts for practical intent, personal expression, or to address a societal issue by using events to initiate instructions.</td>
-	           <td>
-	 <strong>Bootstrap:Reactive - Units 3-5</strong>
-	 <br/>
-	           Bootstrap:Reactive introduces the concept of reactors and event-driven programming, requiring students to write programs that respond to the passage of time, keypresses, and (optionally) mouse clicks and movement.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3A-AP-17:</span> Decompose problems into smaller components through systematic analysis, using constructs such as procedures, modules, and/or objects.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 5-8
-	 <br/>Bootstrap:Reactive - Units 3-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	           Bootstrap introduces students to programming problems that benefit from decomposition into multiple functions and data structures. The Design Recipe provides some structured guidance on when to introduce new functions when decomposing problems.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3A-AP-18:</span> Create artifacts by using procedures within a program, combinations of data and procedures, or independent but interrelated programs.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 3-8
-	 <br/>Bootstrap:Reactive - Units 3-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	           All Bootstrap courses culminate in a final project. For Bootstrap:Algebra and Reactive, the project is a video game or animation that makes use of multiple student-created functions to handle movement and interactivity. In Bootstrap:Data Science, students create a research paper and data science project as a result of analyzing, transforming, and interpreting data with functions.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3A-AP-23:</span> Document design decisions using text, graphics, presentations, and/or demonstrations in the development of complex programs.</td>
-	           <td>
-	 <strong>Bootstrap:Data Science - Units 4-9</strong>
-	 <br/>
-	             The final project for Bootstrap:Data Science is a research paper written by each student which incorporates text, code, and data visualizations to demonstrate their process of analyzing, transforming, and interpreting data to answer meaningful questions.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3B-NI-05:</span> Use data analysis tools and techniques to identify patterns in data representing complex systems.</td>
-	           <td>
-	 <strong>Bootstrap:Data Science - Units 3-9</strong>
-	 <br/>
-	           Bootstrap:Data Science introduces students to a number of data analysis methods, encouraging them to ask questions of large datasets and then sort, filter, and define functions over data to answer those questions.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3B-NI-07:</span> Evaluate the ability of models and simulations to test and support the refinement of hypotheses.</td>
-	           <td>
-	 <strong>Bootstrap:Data Science - Units 3-9</strong>
-	 <br/>
-	           Bootstrap:Data Science has students examine various issues affecting data collection and analysis, including collection bias, threats to validity, and outliers. Using linear regression methods, students can test and refine their hypotheses about relationships in their dataset.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3B-AP-14:</span> Construct solutions to problems using student-created components, such as procedures, modules and/or objects.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 5-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	 		  Bootstrap:Algebra introduces the core idea of functions as abstractions over repeated computations, and has students document, test, and code multiple functions to create a video game. Bootstrap:Reactive moves into larger programs that get decomposed into sub-problems and helper functions, which are designed, implemented and tested independently. Bootstrap:Data Science introduces the idea of writing functions over tabular data to answer meaningful questions about that data.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3B-AP-21:</span> Develop and use a series of test cases to verify that a program performs according to its design specifications.</td>
-	           <td>
-	 <strong>Bootstrap:Algebra - Units 3-8
-	 <br/>Bootstrap:Reactive - Units 1-5
-	 <br/>Bootstrap:Data Science - Units 2-9</strong>
-	 <br/>
-	           Design and execution of test cases is emphasized throughout all Bootstrap courses. Students are required to write multiple test cases (including expected answers for each) for each function; our software helps them track which tests are passing and which are failing.
-	           </td>
-	         </tr>
-	         <tr>
-	           <td><span>3B-AP-22:</span> Modify an existing program to add additional functionality and discuss intended and unintended implications (e.g., breaking other functionality).</td>
-	           <td>
-	 <strong>Bootstrap:Reactive - Units 3-5
-	 <br/>Bootstrap:Data Science - Units 3-9</strong>
-	 <br/>
-	           Bootstrap:Reactive has students walk through an iterative design process for adding and refining elements in their programs based on what things will be changing within their programs. Bootstrap:Data Science has students refine data sets by sorting, filtering, and defining functions over data, as well as thinking critically about the need to remove outliers in their data.
-	           </td>
-	         </tr>
+         <br/>Bootstrap:Reactive - Units 1-5</strong>
+         <br/>
+                     Students encode data using multiple mathematical representations (Algebra), data structures (Reactive), and tabular or visual representations (Data Science).
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-DA-08:</span> Collect data using computational tools and transform the data to make it more useful and reliable.
+                   </td>
+                   <td>
+         <strong>Bootstrap:Data Science - Units 3-9</strong>
+         <br/>
+                   Bootstrap:Data Science introduces students to a number of data analysis methods, encouraging them to ask questions of large datasets and then sort, filter, and define functions over data to answer those questions.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-DA-09:</span> Refine computational models based on the data they have generated.
+                   </td>
+                   <td>
+         <strong>Bootstrap:Reactive - Units 3-5
+         <br/>Bootstrap:Data Science - Units 3-9</strong>
+         <br/>
+                     Bootstrap:Reactive has students walk through an iterative design process for adding and refining elements in their programs based on what things will be changing within their programs. Bootstrap:Data Science has students refine data sets by sorting, filtering, and defining functions over data, as well as thinking critically about the need to remove outliers in their data.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-AP-11:</span> Create clearly named variables that represent different data types and perform operations on their values.
+                   </td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 2-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 1-9</strong>
+         <br/>
+                   All Bootstrap courses cover functions and variables, including named values and inputs to built-in and user-defined functions.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-AP-13:</span> Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs
+                   </td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 5-8
+         <br/>Bootstrap:Reactive - Units 3-5
+         <br/>Bootstrap:Dta Science - Units 2-9</strong>
+         <br/>
+                   Bootstrap introduces students to programming problems that benefit from decomposition into multiple functions and/or data structures. The Design Recipe provides some structured guidance on when to introduce new functions when decomposing problems. Bootstrap:Algebra and Bootstrap:Reactive introduce the idea of top-down or bottom-up strategies for decomposition.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-AP-14:</span> Create procedures with parameters to organize code and make it easier to reuse.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 3-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                          Bootstrap:Algebra introduces the core idea of functions as abstractions over repeated computations. Bootstrap:Reactive moves into larger programs that get decomposed into subproblems, which are designed, implemented, and tested independently.
+                          Bootstrap:Data Science introduces the idea of writing functions over tabular data to answer meaningful questions about that data.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-AP-17:</span> Systematically test and refine programs using a range of test cases.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 3-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                   Design and execution of test cases is emphasized throughout all Bootstrap courses. Students are required to write multiple test cases (including expected answers for each) for each function; our software helps them track which tests are passing and which are failing.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>2-AP-19:</span> Document programs in order to make them easier to follow, test, and debug.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 3-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                   Bootstrap's Design Recipe emphasizes design, documentation, coding, and testing throughout every course. The process is explicit in Bootstrap's worksheets and exercises, and student-generated documentation is assessed along with the code it explains.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3A-DA-11:</span> Create interactive data visualizations using software tools to help others better understand real-world phenomena.</td>
+                   <td>
+         <strong>Bootstrap:Data Science - Units 4-9</strong>
+         <br/>
+                   Bootstrap:Data Science introduces students to pie charts, bar charts, histograms, scatterplots, and more as a way of answering questions about, and better understanding real-world datasets. The course culminates in students writing a research paper incorporating these data visualizations about a topic they care about.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3A-AP-16:</span> Design and iteratively develop computational artifacts for practical intent, personal expression, or to address a societal issue by using events to initiate instructions.</td>
+                   <td>
+         <strong>Bootstrap:Reactive - Units 3-5</strong>
+         <br/>
+                   Bootstrap:Reactive introduces the concept of reactors and event-driven programming, requiring students to write programs that respond to the passage of time, keypresses, and (optionally) mouse clicks and movement.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3A-AP-17:</span> Decompose problems into smaller components through systematic analysis, using constructs such as procedures, modules, and/or objects.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 5-8
+         <br/>Bootstrap:Reactive - Units 3-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                   Bootstrap introduces students to programming problems that benefit from decomposition into multiple functions and data structures. The Design Recipe provides some structured guidance on when to introduce new functions when decomposing problems.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3A-AP-18:</span> Create artifacts by using procedures within a program, combinations of data and procedures, or independent but interrelated programs.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 3-8
+         <br/>Bootstrap:Reactive - Units 3-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                   All Bootstrap courses culminate in a final project. For Bootstrap:Algebra and Reactive, the project is a video game or animation that makes use of multiple student-created functions to handle movement and interactivity. In Bootstrap:Data Science, students create a research paper and data science project as a result of analyzing, transforming, and interpreting data with functions.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3A-AP-23:</span> Document design decisions using text, graphics, presentations, and/or demonstrations in the development of complex programs.</td>
+                   <td>
+         <strong>Bootstrap:Data Science - Units 4-9</strong>
+         <br/>
+                     The final project for Bootstrap:Data Science is a research paper written by each student which incorporates text, code, and data visualizations to demonstrate their process of analyzing, transforming, and interpreting data to answer meaningful questions.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3B-NI-05:</span> Use data analysis tools and techniques to identify patterns in data representing complex systems.</td>
+                   <td>
+         <strong>Bootstrap:Data Science - Units 3-9</strong>
+         <br/>
+                   Bootstrap:Data Science introduces students to a number of data analysis methods, encouraging them to ask questions of large datasets and then sort, filter, and define functions over data to answer those questions.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3B-NI-07:</span> Evaluate the ability of models and simulations to test and support the refinement of hypotheses.</td>
+                   <td>
+         <strong>Bootstrap:Data Science - Units 3-9</strong>
+         <br/>
+                   Bootstrap:Data Science has students examine various issues affecting data collection and analysis, including collection bias, threats to validity, and outliers. Using linear regression methods, students can test and refine their hypotheses about relationships in their dataset.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3B-AP-14:</span> Construct solutions to problems using student-created components, such as procedures, modules and/or objects.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 5-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                          Bootstrap:Algebra introduces the core idea of functions as abstractions over repeated computations, and has students document, test, and code multiple functions to create a video game. Bootstrap:Reactive moves into larger programs that get decomposed into sub-problems and helper functions, which are designed, implemented and tested independently. Bootstrap:Data Science introduces the idea of writing functions over tabular data to answer meaningful questions about that data.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3B-AP-21:</span> Develop and use a series of test cases to verify that a program performs according to its design specifications.</td>
+                   <td>
+         <strong>Bootstrap:Algebra - Units 3-8
+         <br/>Bootstrap:Reactive - Units 1-5
+         <br/>Bootstrap:Data Science - Units 2-9</strong>
+         <br/>
+                   Design and execution of test cases is emphasized throughout all Bootstrap courses. Students are required to write multiple test cases (including expected answers for each) for each function; our software helps them track which tests are passing and which are failing.
+                   </td>
+                 </tr>
+                 <tr>
+                   <td><span>3B-AP-22:</span> Modify an existing program to add additional functionality and discuss intended and unintended implications (e.g., breaking other functionality).</td>
+                   <td>
+         <strong>Bootstrap:Reactive - Units 3-5
+         <br/>Bootstrap:Data Science - Units 3-9</strong>
+         <br/>
+                   Bootstrap:Reactive has students walk through an iterative design process for adding and refining elements in their programs based on what things will be changing within their programs. Bootstrap:Data Science has students refine data sets by sorting, filtering, and defining functions over data, as well as thinking critically about the need to remove outliers in their data.
+                   </td>
+                 </tr>
 
-	       </table> 
+               </table>
 
 
       <table width="100%" id="k12cs">
@@ -722,7 +722,7 @@
         <tr>
           <td><span>Program Development</span></td>
           <td>
-            Our pedagogy is based on a robust process for program development, known as the <i>Design Recipe</i>. This approach has been used for decades at the university level, and mirrors many best practices from industrial contexts. The Design Recipe is an iterative process that involves defining type specifications, communicating those specifications through writing, building example-driven test cases, implementation, and testing. 
+            Our pedagogy is based on a robust process for program development, known as the <i>Design Recipe</i>. This approach has been used for decades at the university level, and mirrors many best practices from industrial contexts. The Design Recipe is an iterative process that involves defining type specifications, communicating those specifications through writing, building example-driven test cases, implementation, and testing.
           </td>
         </tr>
         <!--
@@ -742,9 +742,9 @@
           </td>
         </tr>
         -->
-      </table> 
-  		</div>
-    
-	</div>
-	</body>
+      </table>
+                </div>
+
+        </div>
+        </body>
 </html>
