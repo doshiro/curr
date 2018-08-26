@@ -1,8 +1,8 @@
 <!DOCTYPE html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-                <title>Bootstrap: Materials</title>
-                <link rel="stylesheet" type="text/css" href="/styles.css"/>
+		<title>Bootstrap: Materials</title>
+		<link rel="stylesheet" type="text/css" href="/styles.css"/>
     <style>
       .BSUnitTitle{font-weight: bold;}
       .BSUnitSummary{margin: 5px;}
@@ -13,29 +13,29 @@
       .algebra {background: rgba(90, 50, 50, 0.2)}
       .reactive {background: rgba(90, 50, 50, 0.3)}
 button{
-        display: block;
-        font-size: 1em;
-        padding: 5px 10px;
-        margin: 5px auto;
-        color: #eee;
-        background: linear-gradient(#AAA, #777);
-        border: 1px solid black;
-        border-radius: 3px;
-        box-shadow: 0 3px 3px rgba(0,0,0,0.6);
-        cursor: pointer;
+	display: block;
+	font-size: 1em;
+	padding: 5px 10px;
+	margin: 5px auto;
+	color: #eee;
+	background: linear-gradient(#AAA, #777);
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.6);
+	cursor: pointer;
 }
 button:hover{color: white;}
 button:active{	-webkit-transform: translateY(3px); transform: translateY(3px);box-shadow: none;}
 
     </style>
-
+    
     <script>
-        <!-- Controls the loading of the embedded Google Group -->
-        function loadGroup(){
-          document.getElementById("forum_embed").src = "https://groups.google.com/forum/embed/?place=forum/bootstrap-discuss" +
-          "&showsearch=true&showpopout=true&hideforumtitle=true&parenturl=" +
-          encodeURIComponent(window.location.href);
-        }
+	<!-- Controls the loading of the embedded Google Group -->
+	function loadGroup(){
+	  document.getElementById("forum_embed").src = "https://groups.google.com/forum/embed/?place=forum/bootstrap-discuss" +
+	  "&showsearch=true&showpopout=true&hideforumtitle=true&parenturl=" +
+	  encodeURIComponent(window.location.href);
+	}
 
       function showGroup(){
         var frame = document.getElementById('forum_embed');
@@ -48,15 +48,15 @@ button:active{	-webkit-transform: translateY(3px); transform: translateY(3px);bo
         }
       }
     </script>
-
-        </head>
-        <body onload="loadGroup();">
-
-        <!--#include virtual="/menubar.ssi" -->
-
-        <div id="body">
-                <div class="item">
-              <img src="/images/teacher.jpg" class="side">
+    
+	</head>
+	<body onload="loadGroup();">
+    
+	<!--#include virtual="/menubar.ssi" -->
+  
+	<div id="body">
+		<div class="item">
+	      <img src="/images/teacher.jpg" class="side">
                 <h1>Welcome</h1>
 
    <p>This is a limited-distribution, prototype-release of a self-guided version of our Bootstrap curricula.  This version takes students step-by-step through our materials, integrating lesson materials with a programming environment.  We're still refining this version, and welcome comments or feedback.</p>
@@ -67,11 +67,11 @@ button:active{	-webkit-transform: translateY(3px); transform: translateY(3px);bo
 
 <p>If you have questions, feel free to email us (we assume that you know someone on the Bootstrap team personally if you are using this prototype version).</p>
 
-                <h1>Materials</h1>
+		<h1>Materials</h1>
     <p>We provide two curricula.  <b><a href="courses/algebra/main.shtml">Bootstrap:Algebra</a></b> teaches students to apply mathematical concepts and rigorous programming principles to create a simple videogame.  The second module, <b><a href="courses/reactive/main.shtml">Bootstrap:Reactive</a></b>, helps students create more advanced games using data structures, events, and other more advanced computing topics.  We've listed the breakdown of concepts in the table below.
-                </div>
+		</div>
 
-                <div class="item">
+		<div class="item">
       <table width="100%">
         <thead>
           <tr><td class="col"></td><td>Mathematics</td><td>Programming</td></tr>
@@ -134,22 +134,22 @@ button:active{	-webkit-transform: translateY(3px); transform: translateY(3px);bo
         </tr>
       </table>
     </div>
-
-                <div class="item">
+    
+		<div class="item">
     <img src="/images/htdw-v1.jpg" class="item_img">
         <h1>After Bootstrap...</h1>
-
+        
 If you want to move on from Bootstrap, we recommend one of the following options:
      <ul>
         <li><a href="http://picturingprograms.com/">Picturing Programs</a> focuses heavily on images and animation, as students explore recursion, lists, trees and algorithms -- all using the same language and Design Recipe they've learned in Bootstrap.</li>
         <li><a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/">How to Design Programs</a> is a textbook aimed at more college-level audiences, going beyond the material covered in Picturing Programs. HtDP is currently in its second edition, and the material is being actively updated.</li>
       </ul>
     </div>
-
-                <div class="item">
+        
+		<div class="item">
       <img src="/images/drschemeshot.jpg" class="item_img">
-        </div>
+	</div>
 
-        </body>
+	</body>
 
 </html>
