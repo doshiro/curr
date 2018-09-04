@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html moznomarginboxes=""><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Ejercicio: Crear Contratos a partir de Ejemploss</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="pretty-printing.css" title="default"/><link rel="stylesheet" type="text/css" href="codemirror.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="textbook.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="codemirror.js"></script><script type="text/javascript" src="runmode.js"></script><script type="text/javascript" src="scheme2.js"></script><script type="text/javascript" src="pyret-mode.js"></script><script type="text/javascript" src="bootstraplesson.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2Chttp%3A%2F%2Fwww.cs.wpi.edu%2F%7Ekfisler%2Fmathjaxlocal.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="mature"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Ejercicio:<span class="mywbr"> &nbsp;</span> Crear Contratos a partir de Ejemploss</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Ejercicio__.Crear_.Contratos_a_partir_de_.Ejemploss%29" class="tocsubseclink" data-pltdoc="x">Ejercicio:<span class="mywbr"> &nbsp;</span> Crear Contratos a partir de Ejemploss</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><a name="(part._.Ejercicio__.Crear_.Contratos_a_partir_de_.Ejemploss)"></a><p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><noscript></noscript><script type="text/javascript" src="easyXDM.min.js"></script><noscript></noscript><script type="text/javascript" src="json2.min.js"></script><noscript></noscript><script type="text/javascript" src="wescheme-embedded.js"></script><noscript></noscript><script type="text/javascript" src="bootstrap-helpers.js"></script><noscript></noscript></p><p><div id="homeworkInfo"></div></p><p><span class="BootstrapTitle">Ejercicio: Crear Contratos a partir de Ejemploss</span></p><div class="content"><div id="exercises" class="segment "><div class="exercise-instr"><span style="font-weight: bold">Direcciones: </span>Para cada una de las siguientes colecciones de ejemplos, escriba el contrato
+           para la funci&#243;n arriba de los ejemplos.</div><ol><li><div class="ExerciseListItem"><tt class="racket">; third-root : number -&gt; number</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (third-root 16)
+          (expt 16 1/3)
+(EXAMPLE (third-root 125)
+          (expt 125 1/3)
+(EXAMPLE (third-root 625)
+          (expt 625 1/3)
+</textarea></div></li><li><div class="ExerciseListItem"><tt class="racket">; sentence-length : string number -&gt; number</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (sentence-length "hello" 5)
+          (+ (string-length "hello") 5))
+(EXAMPLE (sentence-length "please" 6)
+          (+ (string-length "please") 6))
+(EXAMPLE (sentence-length "goodbye" 10)
+          (+ (string-length "please") 10))
+</textarea></div></li><li><div class="ExerciseListItem"><tt class="racket">; upside-down : image -&gt; image</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (upside-down (triangle 50 "solid" "yellow"))
+          (rotate 180 (triangle 50 "solid" "yellow")))
+(EXAMPLE (upside-down (star 150 "outline" "blue"))
+          (rotate 180 (star 150 "outline" "blue")))
+</textarea></div></li><li><div class="ExerciseListItem"><tt class="racket">; product-squared : number number -&gt; number</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (product-squared 5 6)
+          (sqr (* 5 6))
+(EXAMPLE (product-squared 10 17)
+          (sqr (* 10 17)))
+(EXAMPLE (product-squared 2 5)
+          (sqr (* 2 5)))
+</textarea></div></li><li><div class="ExerciseListItem"><tt class="racket">; half-image : string -&gt; image</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (half-image "www.images.com/cat_image")
+          (scale .5 (bitmap/url "www.images.com/cat_image")))
+(EXAMPLE (half-image "www.images.com/dog_image")
+          (scale .5 (bitmap/url "www.images.com/dog_image")))
+</textarea></div></li><li><div class="ExerciseListItem"><tt class="racket">; triple : number -&gt; number</tt>&nbsp;<textarea class="racket">
+(EXAMPLE (triple 4)
+          (* 4 3))
+(EXAMPLE (triple 10)
+          (* 10 3))
+(EXAMPLE (triple 3)
+          (* 3 3))
+</textarea></div></li></ol></div></div><div id="copyright"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align: 0px; margin: -3px -3px -3px -3px;" src="pict.png" alt="image" width="94" height="37"/></a>Bootstrap:Algebra por Emmanuel Schanzer, Emma Youndtsmith, Kathi Fisler, and Shriram Krishnamurthi est&#225; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons 4.0 Unported License</a>.  Basado en un trabajo en <a href="http://www.bootstrapworld.org/">www.BootstrapWorld.org</a>. Los permisos que excedan el alcance de esta licencia pueden estar disponibles poni&#233;ndose en contacto con <a href="mailto:schanzer@BootstrapWorld.org">schanzer@BootstrapWorld.org</a>.</div></div></div><div id="contextindicator">&nbsp;</div></body></html>

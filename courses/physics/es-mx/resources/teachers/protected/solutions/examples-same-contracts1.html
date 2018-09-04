@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html moznomarginboxes=""><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Ejercicio: ¿Los ejemplos tienen los mismos contratos?</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="pretty-printing.css" title="default"/><link rel="stylesheet" type="text/css" href="codemirror.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="textbook.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="codemirror.js"></script><script type="text/javascript" src="runmode.js"></script><script type="text/javascript" src="scheme2.js"></script><script type="text/javascript" src="pyret-mode.js"></script><script type="text/javascript" src="bootstraplesson.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2Chttp%3A%2F%2Fwww.cs.wpi.edu%2F%7Ekfisler%2Fmathjaxlocal.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="mature"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Ejercicio:<span class="mywbr"> &nbsp;</span> &#191;Los ejemplos tienen los mismos contratos?</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Ejercicio___.Los_ejemplos_tienen_los_mismos_contratos_%29" class="tocsubseclink" data-pltdoc="x">Ejercicio:<span class="mywbr"> &nbsp;</span> &#191;Los ejemplos tienen los mismos contratos?</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><a name="(part._.Ejercicio___.Los_ejemplos_tienen_los_mismos_contratos_)"></a><p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><noscript></noscript><script type="text/javascript" src="easyXDM.min.js"></script><noscript></noscript><script type="text/javascript" src="json2.min.js"></script><noscript></noscript><script type="text/javascript" src="wescheme-embedded.js"></script><noscript></noscript><script type="text/javascript" src="bootstrap-helpers.js"></script><noscript></noscript></p><p><div id="homeworkInfo"></div></p><p><span class="BootstrapTitle">Ejercicio: &#191;Los ejemplos tienen los mismos contratos?</span></p><div class="content"><div id="exercises" class="segment "><div class="exercise-instr"><span style="font-weight: bold">Direcciones: </span>Para cada par de ejemplos a continuaci&#243;n, decida si los dos ejemplos
+           tener el mismo contrato Si lo hacen, completa el contrato en el espacio
+           previsto. Si no, escriba algunas palabras explicando por qu&#233;.</div><ul class="twoColumnLayout "><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery 30)
+         (* 30 50))
+(EXAMPLE (mystery 10)
+         (text "Welcome!" 10 "darkgreen"))
+</textarea></p></div><div class="rightColumn "><p>no coincide (los tipos de rango son diferentes)</p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery 30 40)
+         (- 40 (* 2 30)))
+(EXAMPLE (mystery 10 15)
+         (- 15 (* 2 10)))
+</textarea></p></div><div class="rightColumn "><p><tt class="racket">; mystery : number number -&gt; number</tt></p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery "New York")
+         (text "New York" 20 "red"))
+(EXAMPLE (mystery 20)
+         (text "New York" 20 "red"))
+</textarea></p></div><div class="rightColumn "><p>no coincide (los dominios tienen diferentes n&#250;meros de argumentos)</p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery "green" 32)
+         (circle 32 "outline" "green"))
+(EXAMPLE (mystery 18 "green")
+         (circle 18 "outline" "green"))
+</textarea></p></div><div class="rightColumn "><p>no coincide (los dominios tienen diferentes n&#250;meros de argumentos)</p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery 6 9 10)
+         (/ 6 (+ 9 10)))
+(EXAMPLE (mystery 3 7)
+         (/ 3 (+ 7 10)))
+</textarea></p></div><div class="rightColumn "><p>no coincide (los dominios tienen diferentes n&#250;meros de argumentos)</p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery "red" "blue")
+         (text "blue" 25 "red"))
+(EXAMPLE (mystery "purple" "Go Team!")
+         (text "Go Team!" 25 "purple"))
+</textarea></p></div><div class="rightColumn "><p><tt class="racket">; mystery : string string -&gt; image</tt></p></div></li><li class="twoColumnLayout Item"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+(EXAMPLE (mystery (circle 55 "outline" "black") 12)
+         (scale 12 (circle 55 "outline" "black")))
+(EXAMPLE (mystery (rectangle 24 32 "outline" "purple") 5)
+         (scale 5 (rectangle 24 32 "outline" "purple")))
+</textarea></p></div><div class="rightColumn "><p><tt class="racket">; mystery : image number -&gt; image</tt></p></div></li></ul></div></div><div id="copyright"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align: 0px; margin: -3px -3px -3px -3px;" src="pict.png" alt="image" width="94" height="37"/></a>Bootstrap:Algebra por Emmanuel Schanzer, Emma Youndtsmith, Kathi Fisler, and Shriram Krishnamurthi est&#225; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons 4.0 Unported License</a>.  Basado en un trabajo en <a href="http://www.bootstrapworld.org/">www.BootstrapWorld.org</a>. Los permisos que excedan el alcance de esta licencia pueden estar disponibles poni&#233;ndose en contacto con <a href="mailto:schanzer@BootstrapWorld.org">schanzer@BootstrapWorld.org</a>.</div></div></div><div id="contextindicator">&nbsp;</div></body></html>
