@@ -15,13 +15,14 @@ before_install:
 - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
 - tar xvf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
 - sudo mv wkhtmltox/bin/wk* /usr/bin
-- sudo apt-get install -y openssl build-essential libssl-dev libxrender-dev git-core libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev fontconfig pdftk texlive-latex-recommended xvfb ttf-mscorefonts-installer
+- sudo apt-get install -y openssl build-essential libssl-dev libxrender-dev git-core libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev fontconfig pdftk texlive-latex-recommended xvfb 
+- echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
+- sudo apt-get install ttf-mscorefonts-installer
 - git clone https://github.com/greghendershott/travis-racket.git
 - cat travis-racket/install-racket.sh | bash
 - export PATH="${RACKET_DIR}/bin:${PATH}"
 script:
 - raco link .
-- racket build.rkt
 - ./build-distrib
 deploy:
   - provider: pages
