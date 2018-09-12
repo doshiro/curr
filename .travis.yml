@@ -23,6 +23,7 @@ before_install:
 - export PATH="${RACKET_DIR}/bin:${PATH}"
 script:
 - raco link .
+- racket build.rkt 
 - ./build-distrib
 deploy:
   - provider: pages
