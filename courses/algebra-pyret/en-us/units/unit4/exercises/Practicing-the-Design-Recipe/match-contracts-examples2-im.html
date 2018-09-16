@@ -12,13 +12,15 @@ examples:
 end
 </textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number -&gt; String</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
-  match(triangle(20, "solid", "pink"), 3) is
-    3 * image-height( triangle(20, "solid", "pink"))
+  match(star(20, "solid", "pink"), 3) is
+    3 * image-height(
+          star(20, "solid", "pink"))
 end
 </textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: String, String -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
   match(circle(10, "solid", "red"), 16) is
-    16 * image-height( circle(10, "solid", "red"))
+    16 * image-height(
+            circle(10, "solid", "red"))
 end
 </textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Number -&gt; Image</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
@@ -27,7 +29,8 @@ examples:
 end
 </textarea></p></div><div class="rightColumn "><p><tt class="racket"> match :: Image, Number -&gt; Number</tt></p></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:
-  match(string-length("coffee"), string-length("tea")) is 6 + 3
+  match(string-length("coffee"),
+        string-length("tea")) is 6 + 3
 end
 </textarea></p></div><div class="rightColumn "></div></li><li class="twoColumnLayout matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
 examples:

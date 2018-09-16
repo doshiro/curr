@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html moznomarginboxes=""><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Exercise: Matching Examples and Function Definitions</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="pretty-printing.css" title="default"/><link rel="stylesheet" type="text/css" href="codemirror.css" title="default"/><link rel="stylesheet" type="text/css" href="bootstrap.css" title="default"/><link rel="stylesheet" type="text/css" href="textbook.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="codemirror.js"></script><script type="text/javascript" src="runmode.js"></script><script type="text/javascript" src="scheme2.js"></script><script type="text/javascript" src="pyret-mode.js"></script><script type="text/javascript" src="bootstraplesson.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2Chttp%3A%2F%2Fwww.cs.wpi.edu%2F%7Ekfisler%2Fmathjaxlocal.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="mature"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Exercise:<span class="mywbr"> &nbsp;</span> Matching Examples and Function Definitions</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.Exercise__.Matching_.Examples_and_.Function_.Definitions%29" class="tocsubseclink" data-pltdoc="x">Exercise:<span class="mywbr"> &nbsp;</span> Matching Examples and Function Definitions</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><a name="(part._.Exercise__.Matching_.Examples_and_.Function_.Definitions)"></a><p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><noscript></noscript><script type="text/javascript" src="easyXDM.min.js"></script><noscript></noscript><script type="text/javascript" src="json2.min.js"></script><noscript></noscript><script type="text/javascript" src="wescheme-embedded.js"></script><noscript></noscript><script type="text/javascript" src="bootstrap-helpers.js"></script><noscript></noscript></p><p><div id="homeworkInfo"></div></p><p><span class="BootstrapTitle">Exercise: Matching Examples and Function Definitions</span></p><div class="content"><div id="exercises" class="segment "><div class="exercise-instr"><span style="font-weight: bold">Directions: </span>Match the EXAMPLEs on the left with the definitions on the right. NOTE: Some definitions may not match any examples!</div><ul class="twoColumnLayout solutions matching"><li class="twoColumnLayout solutions matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+examples:
+  mystery("red") is 
+    circle(10, "solid", "red")
+  mystery("orange") is
+    circle(10, "solid", "orange")
+end
+</textarea></p></div><div class="rightColumn "><div class="labeledRightColumn"><span class="rightColumnLabel">f</span><p>&nbsp;<textarea class="racket">
+fun mystery(color):
+  circle(10, "solid", color)
+end
+</textarea></p></div></div></li><li class="twoColumnLayout solutions matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+examples:
+  mystery(30) is 
+    circle(30, "outline", "red")
+  mystery(10) is 
+    circle(10, "outline", "red")
+end
+</textarea></p></div><div class="rightColumn "><div class="labeledRightColumn"><span class="rightColumnLabel">a</span><p>&nbsp;<textarea class="racket">
+fun mystery(radius):
+  circle(radius, "outline", "red")
+end
+</textarea></p></div></div></li><li class="twoColumnLayout solutions matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+examples:
+  mystery(30) is 
+    rectangle(30, 10, "outline", "red")
+  mystery(10) is 
+    rectangle(10, 10, "outline", "red")
+end
+</textarea></p></div><div class="rightColumn "><div class="labeledRightColumn"><span class="rightColumnLabel">c</span><p>&nbsp;<textarea class="racket">
+fun mystery(width):
+  rectangle(width, 10, "outline", "red")
+end
+</textarea></p></div></div></li><li class="twoColumnLayout solutions matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+examples:
+  mystery(30) is 
+    rectangle(20, 30, "solid", "red")
+  mystery(20) is 
+    rectangle(20, 20, "solid", "red")
+  mystery(10) is 
+    rectangle(20, 10, "solid", "red")
+end
+</textarea></p></div><div class="rightColumn "><div class="labeledRightColumn"><span class="rightColumnLabel">g</span><p>&nbsp;<textarea class="racket">
+fun mystery(height):
+  rectangle(20, h, "solid", "red")
+end
+</textarea></p></div></div></li><li class="twoColumnLayout solutions matchingItem"><div class="leftColumn "><p>&nbsp;<textarea class="racket">
+examples:
+  mystery(2) is (2 + 2)
+  mystery(4) is (4 + 4)
+  mystery(5) is (5 + 5)
+end
+
+</textarea></p></div><div class="rightColumn "><div class="labeledRightColumn"><span class="rightColumnLabel">d</span><p>&nbsp;<textarea class="racket">
+fun mystery(num):
+  num + num
+end
+</textarea></p></div></div></li></ul></div></div><div id="copyright"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img style="vertical-align: 0px; margin: -3px -3px -3px -3px;" src="pict.png" alt="image" width="94" height="37"/></a>Bootstrap:Algebra by Emmanuel Schanzer, Emma Youndtsmith, Kathi Fisler, and Shriram Krishnamurthi is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons 4.0 Unported License</a>. Based on a work at <a href="http://www.bootstrapworld.org/">www.BootstrapWorld.org</a>. Permissions beyond the scope of this license may be available by contacting <a href="mailto:schanzer@BootstrapWorld.org">schanzer@BootstrapWorld.org</a>.</div></div></div><div id="contextindicator">&nbsp;</div></body></html>
