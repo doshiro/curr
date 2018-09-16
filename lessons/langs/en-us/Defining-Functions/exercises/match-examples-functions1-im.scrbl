@@ -6,71 +6,71 @@
 @(define e1
    (code #:multi-line #t 
 "examples:
- mystery(\"red\") is 
-         circle(10, \"solid\", \"red\")
- mystery(\"orange\") is
-         circle(10, \"solid\", \"orange\")
+  mystery(\"red\") is 
+    circle(10, \"solid\", \"red\")
+  mystery(\"orange\") is
+    circle(10, \"solid\", \"orange\")
 end"))
 
 @(define f1
    (code #:multi-line #t
-"fun mystery(c):
-  circle(10, \"solid\", c)
+"fun mystery(color):
+  circle(10, \"solid\", color)
 end"))
 
 @(define e2
    (code #:multi-line #t
 "examples:
- mystery(30) is 
-         circle(30, \"outline\", \"red\")
- mystery(10) is 
-         circle(10, \"outline\", \"red\")
+  mystery(30) is 
+    circle(30, \"outline\", \"red\")
+  mystery(10) is 
+    circle(10, \"outline\", \"red\")
 end"))
 
 @(define f2
    (code #:multi-line #t
-"fun mystery(r):
-  circle(r, \"outline\", \"red\")
+"fun mystery(radius):
+  circle(radius, \"outline\", \"red\")
 end"))
 
 @(define e3
    (code #:multi-line #t
 "examples:
- mystery(30) is 
-         rectangle(30, 10, \"outline\", \"red\")
- mystery(10) is 
-         rectangle(10, 10, \"outline\", \"red\")
+  mystery(30) is 
+    rectangle(30, 10, \"outline\", \"red\")
+  mystery(10) is 
+    rectangle(10, 10, \"outline\", \"red\")
 end"))
 
 @(define f3
    (code #:multi-line #t
-"fun mystery(w):
-  rectangle(w, 10, \"outline\", \"red\")
+"fun mystery(width):
+  rectangle(width, 10, \"outline\", \"red\")
 end"))
 
 @(define e4
    (code #:multi-line #t
 "examples:
- mystery(30) is 
-         rectangle(20, 30, \"solid\", \"red\")
- mystery(20) is 
-         rectangle(20, 20, \"solid\", \"red\")
- mystery(10) is 
-         rectangle(20, 10, \"solid\", \"red\")
+  mystery(30) is 
+    rectangle(20, 30, \"solid\", \"red\")
+  mystery(20) is 
+    rectangle(20, 20, \"solid\", \"red\")
+  mystery(10) is 
+    rectangle(20, 10, \"solid\", \"red\")
 end"))
 
 @(define f4
    (code #:multi-line #t
-"fun mystery(h):
+"fun mystery(height):
   rectangle(20, h, \"solid\", \"red\")
 end"))
 
 @(define e5
    (code #:multi-line #t
 "examples:
- mystery(2) is (2 + 2)
- mystery(4) is (4 + 4)
- mystery(5) is (5 + 5)
+  mystery(2) is (2 + 2)
+  mystery(4) is (4 + 4)
+  mystery(5) is (5 + 5)
 end
 "))
 
@@ -88,7 +88,7 @@ end"))
 
 @(define f7
    (code #:multi-line #t
-"fun mystery(h):
+"fun mystery(height):
   rectangle(10, h, \"solid\", \"red\")
 end"))
 
