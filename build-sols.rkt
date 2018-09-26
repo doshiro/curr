@@ -85,7 +85,10 @@
       (make-directory teacher-protected))
     (rename-file-or-directory (build-path teacher-resources "solutions")
                               (build-path teacher-protected "solutions")
-                              #t))
+                              #t)
+    (unless (file-exists? (build-path teacher-protected "solutions" "incorrect-password.html"))
+      (copy-file (build-path "lib" "incorrect-password.html")
+                (build-path teacher-protected "solutions" "incorrect-password.html"))))
   ;(solutions-mode-off)
   )
 
