@@ -44,6 +44,8 @@
 (define-runtime-path bootstraplesson.js "bootstraplesson.js")
 (define-runtime-path workbook.css "workbook.css")
 (define-runtime-path overview-styles.css "styles.css")
+(define-runtime-path password.js "password.js")
+(define-runtime-path password.css "password.css")
 
 (define css-js-additions
   (list (make-tex-addition bootstrap-pdf.tex)
@@ -58,7 +60,11 @@
         (make-js-addition mathjax-url)
         (cond [(member (getenv "BOOTSTRAP-TARGET") (list "workbook")) (make-css-style-addition workbook.css)]
               [else (make-css-style-addition textbook.css)])
-        )) 
+        (cond [(member (getenv "CURRENT-SOLUTIONS-MODE") (list "on")) 
+            (make-css-addition password.css)])
+        (cond [(member (getenv "CURRENT-SOLUTIONS-MODE") (list "on")) 
+            (make-js-addition password.js)])
+        ))
 
 (define overview-pages-css-js-additions
   (list (make-css-style-addition overview-styles.css)
