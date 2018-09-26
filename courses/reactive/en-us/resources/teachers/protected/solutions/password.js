@@ -1,12 +1,11 @@
-const correctpw = "password"
+const correctpw = "bootstrapteacher"
 
 function passwordPrompt() {
-  document.body.style.display = "none";
   var pw = prompt("Please enter the password:", "");
   if( pw === correctpw ) {
-    document.body.style.display = "block";
+    document.body.style.visibility = "visible";
   } else {
-    window.location.replace('incorrect-password.html')
+    window.location.replace('incorrect-password.html');
   }
 }
 
